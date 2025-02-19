@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Role-n-Task-Gen</title>
     <link type="text/css" rel="stylesheet" href="w3.css" />
-    <link rel="icon" type="image/jpg" href="favicon.ico" />
+    <link type="image/jpg" rel="icon" href="favicon.ico" />
   </head>
   <body class="w3-black">
-    <header class="w3-row w3-blue w3-text-black">
-      <div class="w3-container w3-half">
-        <h1>Role and Task Gen</h1>
+    <header class="w3-row w3-theme">
+      <div class="w3-container w3-half w3-text-black">
+        <h1 class="w3-hide-small">Role and Task Gen</h1>
+        <h1 class="w3-hide-medium w3-hide-large w3-center">
+          Role and Task Gen
+        </h1>
       </div>
-      <nav class="w3-container w3-padding w3-rest" style="margin-top: 8px">
+      <nav
+        class="w3-container w3-padding w3-rest w3-center"
+        style="margin-top: 8px"
+      >
         <button
           type="button"
           id="index-button"
           onclick="document.location='index.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Home</b>
         </button>
@@ -25,7 +31,7 @@
           type="button"
           id="join-button"
           onclick="document.location='join-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Join Room</b>
         </button>
@@ -33,7 +39,7 @@
           type="button"
           id="host-button"
           onclick="document.location='host-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Host Room</b>
         </button>
@@ -42,26 +48,26 @@
 
     <main class="w3-panel">
       <section class="w3-card-4">
-        <header class="w3-container w3-teal">
+        <header class="w3-container w3-theme-l1">
           <h2>Join Room</h2>
         </header>
-        <form class="w3-container w3-dark-gray">
+        <form class="w3-container w3-theme-d5">
           <p>
             <label><b>Username</b></label>
-            <input class="w3-input w3-border w3-round" type="text" />
+            <input class="w3-input w3-border w3-round w3-theme-l3" type="text" />
           </p>
           <p>
             <label><b>Room Code</b></label>
-            <input class="w3-input w3-border w3-round" type="text" />
+            <input class="w3-input w3-border w3-round w3-theme-l3" type="text" />
           </p>
           <p>
-            <button class="w3-btn w3-round-xlarge w3-light-blue">
+            <button class="w3-btn w3-round-xlarge w3-theme-l2">
               <b>Join</b>
             </button>
           </p>
         </form>
       </section>
-      <section class="w3-container">
+      <section class="w3-panel">
         <p>If a room has been created, then you may join it.</p>
         <p>
           To join a room, you must enter a username (max length of 10
@@ -70,10 +76,10 @@
       </section>
     </main>
 
-    <footer class="w3-container w3-blue-gray w3-text-black">
-      <h3>
+    <footer class="w3-container w3-theme-d5">
+      <h6>
         Contact me at: <a href="mailto:name@example.com">name@example.com</a>
-      </h3>
+      </h6>
     </footer>
   </body>
 </html>

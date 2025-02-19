@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Role-n-Task-Gen</title>
     <link type="text/css" rel="stylesheet" href="w3.css" />
-    <link rel="icon" type="image/jpg" href="favicon.ico" />
+    <link type="image/jpg" rel="icon" href="favicon.ico" />
   </head>
   <body class="w3-black">
-    <header class="w3-row w3-blue w3-text-black">
-      <div class="w3-container w3-half">
-        <h1>Role and Task Gen</h1>
+    <header class="w3-row w3-theme">
+      <div class="w3-container w3-half w3-text-black">
+        <h1 class="w3-hide-small">Role and Task Gen</h1>
+        <h1 class="w3-hide-medium w3-hide-large w3-center">
+          Role and Task Gen
+        </h1>
       </div>
-      <nav class="w3-container w3-padding w3-rest" style="margin-top: 8px">
+      <nav
+        class="w3-container w3-padding w3-rest w3-center"
+        style="margin-top: 8px"
+      >
         <button
           type="button"
           id="index-button"
           onclick="document.location='index.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Home</b>
         </button>
@@ -25,7 +31,7 @@
           type="button"
           id="join-button"
           onclick="document.location='join-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Join Room</b>
         </button>
@@ -33,16 +39,17 @@
           type="button"
           id="host-button"
           onclick="document.location='host-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
           <b>Host Room</b>
         </button>
       </nav>
     </header>
 
-    <main class="w3-container">
+    <main class="w3-panel">
       <section class="w3-container">
-        <h2>RTG</h2>
+        <h2 class="w3-hide-small">RTG</h2>
+        <h2 class="w3-hide-medium w3-hide-large">Role and Task Generator</h2>
         <p>
           Role and Task Generator (RTG) was made for the general purpose of
           streamlining the process of pulling names from a hat.
@@ -91,10 +98,10 @@
       </section>
     </main>
 
-    <footer class="w3-container w3-blue-gray w3-text-black">
-      <h3>
+    <footer class="w3-container w3-theme-d5">
+      <h6>
         Contact me at: <a href="mailto:name@example.com">name@example.com</a>
-      </h3>
+      </h6>
     </footer>
   </body>
 </html>
