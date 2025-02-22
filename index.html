@@ -1,48 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Role-n-Task-Gen</title>
+    <meta name="application-name" content="Role and Task Generator" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Role-n-Task-Gen</title>
+    <meta name="author" content="Micah Ronan" />
+    <meta
+      name="description"
+      content="A web app for streamlining the process of pulling names from a hat."
+    />
+    <meta name="keywords" content="role generator, task generator" />
     <link type="text/css" rel="stylesheet" href="w3.css" />
-    <link rel="icon" type="image/jpg" href="favicon.ico" />
+    <link type="image/jpg" rel="icon" href="favicon.ico" />
+    <!-- <base href="https://www.raavuer.github.io"/> -->
+    <style>
+      .w3-theme-l5 {
+        color: #000 !important;
+        background-color: #f2f9fe !important;
+      }
+      .w3-theme-l4 {
+        color: #000 !important;
+        background-color: #d2eafd !important;
+      }
+      .w3-theme-l3 {
+        color: #000 !important;
+        background-color: #a6d4fa !important;
+      }
+      .w3-theme-l2 {
+        color: #000 !important;
+        background-color: #79bff8 !important;
+      }
+      .w3-theme-l1 {
+        color: #fff !important;
+        background-color: #4daaf6 !important;
+      }
+      .w3-theme-d1 {
+        color: #fff !important;
+        background-color: #0c87eb !important;
+      }
+      .w3-theme-d2 {
+        color: #fff !important;
+        background-color: #0b78d1 !important;
+      }
+      .w3-theme-d3 {
+        color: #fff !important;
+        background-color: #0a69b7 !important;
+      }
+      .w3-theme-d4 {
+        color: #fff !important;
+        background-color: #085a9d !important;
+      }
+      .w3-theme-d5 {
+        color: #fff !important;
+        background-color: #074b83 !important;
+      }
+
+      .w3-theme-light {
+        color: #000 !important;
+        background-color: #f2f9fe !important;
+      }
+      .w3-theme-dark {
+        color: #fff !important;
+        background-color: #074b83 !important;
+      }
+      .w3-theme-action {
+        color: #fff !important;
+        background-color: #074b83 !important;
+      }
+
+      .w3-theme {
+        color: #fff !important;
+        background-color: #2196f3 !important;
+      }
+      .w3-text-theme {
+        color: #2196f3 !important;
+      }
+      .w3-border-theme {
+        border-color: #2196f3 !important;
+      }
+
+      .w3-hover-theme:hover {
+        color: #fff !important;
+        background-color: #2196f3 !important;
+      }
+      .w3-hover-text-theme:hover {
+        color: #2196f3 !important;
+      }
+      .w3-hover-border-theme:hover {
+        border-color: #2196f3 !important;
+      }
+
+      .w3-hover-theme-d4:hover {
+        color: #fff !important;
+        background-color: #085a9d !important;
+      }
+
+      header nav button {
+        margin: 0px 2px;
+      }
+      @media (min-width: 601px) {
+        header nav {
+          margin-top: 8px;
+        }
+        header nav button {
+          margin: 0px 6px;
+        }
+      }
+    </style>
   </head>
   <body class="w3-black">
-    <header class="w3-row w3-blue w3-text-black">
-      <div class="w3-container w3-half">
-        <h1>Role and Task Gen</h1>
+    <header class="w3-row w3-theme">
+      <div class="w3-container w3-text-black w3-col l8 m6">
+        <h1 class="w3-hide-small">Role and Task Gen</h1>
+        <h1 class="w3-hide-medium w3-hide-large">Role and Task Gen</h1>
       </div>
-      <nav class="w3-container w3-padding w3-rest" style="margin-top: 8px">
+      <nav class="w3-container w3-padding w3-col l4 m6">
         <button
           type="button"
           id="index-button"
           onclick="document.location='index.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
-          Home
+          <b>Home</b>
         </button>
         <button
           type="button"
           id="join-button"
           onclick="document.location='join-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
-          Join Room
+          <b>Join Room</b>
         </button>
         <button
           type="button"
           id="host-button"
           onclick="document.location='host-room.html'"
-          class="nav-btn w3-btn w3-round-xlarge w3-light-blue w3-hover-indigo"
+          class="w3-btn w3-round-xlarge w3-theme-l2 w3-hover-theme-d4"
         >
-          Host Room
+          <b>Host Room</b>
         </button>
       </nav>
     </header>
 
-    <main class="w3-container">
+    <main class="w3-panel">
       <section class="w3-container">
-        <h2>RTG</h2>
+        <h2 class="w3-hide-small">RTG</h2>
+        <h2 class="w3-hide-medium w3-hide-large">Role and Task Generator</h2>
         <p>
           Role and Task Generator (RTG) was made for the general purpose of
           streamlining the process of pulling names from a hat.
@@ -91,10 +195,10 @@
       </section>
     </main>
 
-    <footer class="w3-container w3-blue-gray w3-text-black">
-      <h3>
+    <footer class="w3-container w3-theme-d5">
+      <h6>
         Contact me at: <a href="mailto:name@example.com">name@example.com</a>
-      </h3>
+      </h6>
     </footer>
   </body>
 </html>
