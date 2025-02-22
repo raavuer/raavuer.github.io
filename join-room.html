@@ -10,7 +10,7 @@
       name="description"
       content="A web app for streamlining the process of pulling names from a hat."
     />
-    <meta name="keywords" content="role generator, task generator, " />
+    <meta name="keywords" content="role generator, task generator" />
     <link type="text/css" rel="stylesheet" href="w3.css" />
     <link type="image/jpg" rel="icon" href="favicon.ico" />
     <!-- <base href="https://www.raavuer.github.io"/> -->
@@ -154,13 +154,23 @@
             <input
               class="w3-input w3-border-theme w3-round w3-theme-l3"
               type="text"
+              placeholder="10 Letter Max Name"
+              pattern="[A-Za-z]{1,10}"
+              maxlength="10"
+              required
             />
           </p>
           <p>
             <label><b>Room Code</b></label>
             <input
               class="w3-input w3-border-theme w3-round w3-theme-l3"
-              type="text"
+              type="number"
+              pattern="0-9{4}"
+              maxlength="4"
+              placeholder="4-Digit Number"
+              min="0"
+              max="9999"
+              required
             />
           </p>
           <p>

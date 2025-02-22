@@ -10,7 +10,7 @@
       name="description"
       content="A web app for streamlining the process of pulling names from a hat."
     />
-    <meta name="keywords" content="role generator, task generator, " />
+    <meta name="keywords" content="role generator, task generator" />
     <link type="text/css" rel="stylesheet" href="w3.css" />
     <link type="image/jpg" rel="icon" href="favicon.ico" />
     <!-- <base href="https://www.raavuer.github.io"/> -->
@@ -148,7 +148,66 @@
         <header class="w3-container w3-theme-l1">
           <h2>Host Room</h2>
         </header>
-        <!-- Host Form -->
+        <form class="w3-container w3-theme-d5">
+          <p>
+            <label><b>Username</b></label>
+            <input
+              class="w3-input w3-border-theme w3-round w3-theme-l3"
+              type="text"
+              placeholder="10 Letter Max Name"
+              pattern="[A-Za-z]{1,10}"
+              maxlength="10"
+              required
+            />
+          </p>
+          <div class="w3-row-padding">
+            <p class="w3-third">
+              <label><b>Max Players</b></label>
+              <input
+                class="w3-input w3-border-theme w3-round w3-theme-l3"
+                type="number"
+                pattern="0-9{1,2}"
+                maxlength="2"
+                value="10"
+                min="1"
+                max="20"
+                required
+              />
+            </p>
+            <p class="w3-third">
+              <label><b>Number Impostors</b></label>
+              <input
+                class="w3-input w3-border-theme w3-round w3-theme-l3"
+                type="number"
+                pattern="0-9{1}"
+                maxlength="1"
+                value="3"
+                min="1"
+                max="5"
+                required
+              />
+            </p>
+            <p class="w3-third">
+              <label><b>Number of Tasks</b></label>
+              <input
+                class="w3-input w3-border-theme w3-round w3-theme-l3"
+                type="number"
+                pattern="0-9{1}"
+                maxlength="1"
+                value="2"
+                min="1"
+                max="5"
+                required
+              />
+            </p>
+          </div>
+
+          <p>
+            <button class="w3-btn w3-round-xlarge w3-theme-l2">
+              <b>Host</b>
+            </button>
+          </p>
+        </form>
       </section>
       <section class="w3-panel">
         <p>
